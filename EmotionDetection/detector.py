@@ -10,6 +10,7 @@ prediction_model = load_model('model')
 capture = cv2.VideoCapture(0)
 
 emotion_labels = {0:'Angry', 1:'Disgust', 2:'Fear', 3:'Happy', 4:'Neutral', 5:'Sad', 6:'Surprise'}
+colors = {0:(0, 128, 255), 1:(246, 61, 252), 2:(246, 61, 252), 3:(0,255,90), 4:(204, 204, 204), 5:(237, 28, 63), 6:(252,238,33)}
 
 while True:
     _, frame = capture.read()
@@ -30,8 +31,8 @@ while True:
 
             prediction = prediction_model.predict(roi_)[0]
             emotion = emotion_labels[prediction.argmax()]
-            label_pos = (x, y)
-            cv2.putText(frame, emotion, label_pos, cv2.FONT_HERSHEY_PLAIN, 1, (10, 255, 22), 2)
+            label_pos = (x, y - 10)
+            cv2.putText(frame, emotion, label_pos, cv2.FONT_HERSHEY_PLAIN, 2, colors[prediction.argmax()], 2)
 
         else:
             pass
