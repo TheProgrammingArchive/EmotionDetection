@@ -1,5 +1,5 @@
 # EmotionDetection
-High school project on emotion detection using TensorFlow, Keras and OpenCV
+High school project on machine learning using TensorFlow, Keras and OpenCV
 
 <b> Dataset used </b>: Fer13
 <br>
