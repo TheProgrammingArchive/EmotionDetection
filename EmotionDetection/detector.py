@@ -6,6 +6,7 @@ from keras.preprocessing import image
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 prediction_model = load_model('model')
+age_model = load_model('amongus')
 
 capture = cv2.VideoCapture(0)
 
@@ -31,8 +32,10 @@ while True:
 
             prediction = prediction_model.predict(roi_)[0]
             emotion = emotion_labels[prediction.argmax()]
+            age = str(int(age_model.predict(roi_)))
             label_pos = (x, y - 10)
-            cv2.putText(frame, emotion, label_pos, cv2.FONT_HERSHEY_PLAIN, 2, colors[prediction.argmax()], 2)
+
+            cv2.putText(frame, f'{emotion}, {age}', label_pos, cv2.FONT_HERSHEY_PLAIN, 2, colors[prediction.argmax()], 2)
 
         else:
             pass
