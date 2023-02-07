@@ -25,4 +25,4 @@
   * python detector.py -c (for camera detection mode)
   
 ### Dependencies: <br>
-  * tensorflow, opencv
+  * TensorFlow, Opencv
