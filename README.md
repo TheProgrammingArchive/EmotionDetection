@@ -17,7 +17,7 @@
 
 ### Setup: <br>
   * Clone the repository
-  * Download both models and place them in EmotionDetection/ directory
+  * Download both models and place them in 'EmotionDetection/' directory
   * Make sure dependencies are installed
   
 ### Usage: <br>
