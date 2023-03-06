@@ -1,5 +1,6 @@
 # EmotionDetection
 ### High school project on machine learning using TensorFlow, Keras and OpenCV
+<b> A model that recognizes emotions and classifies them into 7 categories.
 
 <b> Dataset used (emotion detection) </b>: Fer13
 <br>
