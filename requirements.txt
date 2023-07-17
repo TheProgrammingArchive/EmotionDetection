@@ -1,2 +1,4 @@
 opencv-python==4.6.0.66
-tensorflow==2.10.1
+tensorflow==2.11.0
+protobuf==3.19.0
+streamlit-webrtc==0.45.1
