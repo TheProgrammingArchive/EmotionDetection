@@ -19,9 +19,12 @@ emotion_labels = {0:'Angry', 1:'Disgust', 2:'Fear', 3:'Happy', 4:'Neutral', 5:'S
 colors = {0:(0, 128, 255), 1:(246, 61, 252), 2:(246, 61, 252), 3:(0,255,90), 4:(204, 204, 204), 5:(237, 28, 63), 6:(252,238,33)}
 
 while True:
+    camera = True
     if (arg == '-c'):
         _, frame = capture.read()
+
     else:    
+        camera = False
         frame = np.array(ImageGrab.grab(bbox=(40,300,1200,1000)))
         
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -48,8 +51,12 @@ while True:
 
         else:
             pass
+    
+    if not camera:
+        cv2.imshow('Detector', cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
-    cv2.imshow('Detector', frame)
+    else:
+        cv2.imshow('Detector', frame)
 
     if cv2.waitKey(1) == ord('Q'):
         break
