@@ -22,12 +22,12 @@
   * Make sure dependencies are installed
   
 ### Usage: <br>
-  To run using streamlit:
-    * streamlit run app.py
+  <b>To run using streamlit: </b><br>
+  * streamlit run app.py
 
-  To run using terminal:
-    * python detector.py -w (for windowed detection mode)
-    * python detector.py -c (for camera detection mode)
+  <b>To run using terminal: </b><br>
+  * python detector.py -w (for windowed detection mode)
+  * python detector.py -c (for camera detection mode)
   
 ### Dependencies: <br>
   * TensorFlow, Opencv, Pillow
