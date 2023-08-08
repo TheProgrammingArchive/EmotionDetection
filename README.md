@@ -31,4 +31,4 @@
   
 ### Dependencies: <br>
   * TensorFlow, Opencv, Pillow
-  * streamlit 
+  * streamlit (optional)
