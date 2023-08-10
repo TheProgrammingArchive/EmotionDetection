@@ -6,11 +6,11 @@
 <br>
 <b> Final model accuracy (emotion detection) </b>: 68.5% on training set, 63% on test set
 <br>
-<b> Final model mae (age detection) </b>: 5.6
 <br>
 <br>
 <b> Dataset used (age detection) </b>: UTKFace
 <br>
+<b> Final model mae (age detection) </b>: 5.6
 
 
 ### Download the models here: </i><br>
