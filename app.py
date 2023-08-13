@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title('Emotion Detection and Age Recognition')
+st.subheader('Made by Purav and Shrivatsan')
 st.divider()
 st.subheader('About the project')
 st.write("Our project uses two models to classify images in real time based on emotion and age using CNN's")
