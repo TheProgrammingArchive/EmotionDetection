@@ -13,7 +13,7 @@ cascade = cv2.CascadeClassifier('EmotionDetection/haarcascade_frontalface_defaul
 @st.cache_resource
 def load_required_models():
     prediction_model = load_model('EmotionDetection/model')
-    age_model = load_model('EmotionDetection/amongus')
+    age_model = load_model('EmotionDetection/age')
 
     return prediction_model, age_model
 
