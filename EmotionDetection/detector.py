@@ -10,7 +10,7 @@ arg = sys.argv[1]
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 prediction_model = load_model('model')
-age_model = load_model('amongus')
+age_model = load_model('age')
 
 if (arg == '-c'):
     capture = cv2.VideoCapture(0)
