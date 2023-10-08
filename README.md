@@ -14,7 +14,7 @@
 
 ### Download the models here: </i><br>
   <b> Age Detection model <b>:  https://drive.google.com/file/d/12WBK04uGUh4yYU8WzYbY7ZNapQ6gkGcv/view?usp=share_link <br>
-  <b> Emotion Detection model <b>: 
+  <b> Emotion Detection model <b>: https://drive.google.com/file/d/1M9SC4r8e3STFP6CV2lA_FLtEpD9B3W51/view?usp=drive_link
 
 
 ### Setup: <br>
